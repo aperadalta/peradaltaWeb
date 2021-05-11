@@ -1,0 +1,183 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+#title {
+  font-family: 'Roboto', sans-serif;
+  font-size: 120px;
+  font-weight: 1200;
+  text-align: center;
+  margin-top: 35vh;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  overflow-x: hidden;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  padding: 0 75px;
+}
+
+header {
+  margin: 50px auto;
+  max-width: 1280px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+header * {
+  text-align: left;
+  margin-bottom: 7px;
+}
+
+header h1 {
+  font-size: 3em;
+  margin-bottom: 20px;
+}
+
+header #uoc {
+  font-style: italic;
+  font-weight: 300;
+}
+
+header #img {
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  background-color: grey;
+  background-image: url("/universitat/myself.jpg");
+  background-position: 85% 20%;
+  background-repeat: no-repeat;
+  background-size: 190%;
+  -webkit-transform: scaleX(-1);
+          transform: scaleX(-1);
+}
+
+#main {
+  display: -ms-grid;
+  display: grid;
+  margin: auto;
+  max-width: 1280px;
+  -ms-grid-columns: (minmax(230px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  -webkit-column-gap: 10px;
+          column-gap: 10px;
+  row-gap: 10px;
+}
+
+#main .square {
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #73EDFF;
+  text-align: center;
+}
+
+p {
+  padding: 10px 3px 10px 3px;
+  margin: 10px 0;
+  border-radius: 5px;
+  background-color: white;
+  width: 100%;
+  color: #161616;
+  -webkit-transition: background-color 0.5s, color 0.1s;
+  transition: background-color 0.5s, color 0.1s;
+}
+
+p:hover {
+  color: white;
+  background-color: #14182c;
+}
+
+a {
+  text-decoration: none;
+}
+
+#info {
+  position: fixed;
+  bottom: 0;
+  left: 35px;
+  border-left: 4px solid #464646;
+  height: 130px;
+  overflow: visible;
+  padding-bottom: 50px;
+}
+
+.icons {
+  position: fixed;
+  bottom: 20px;
+  left: 36px;
+  z-index: 99;
+  overflow: visible;
+}
+
+.icons div {
+  margin: 10px 0;
+  margin-left: -20px;
+  background-color: #1a1a1a;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  cursor: pointer;
+  -webkit-transition: color 1s, background-color 1s, -webkit-transform 1s;
+  transition: color 1s, background-color 1s, -webkit-transform 1s;
+  transition: transform 1s, color 1s, background-color 1s;
+  transition: transform 1s, color 1s, background-color 1s, -webkit-transform 1s;
+}
+
+.icons div a {
+  color: white;
+}
+
+.icons div a:hover {
+  color: #1a1a1a;
+}
+
+.icons div:hover {
+  color: #1a1a1a;
+  background-color: white;
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+}
+
+@media only screen and (max-width: 800px) {
+  body {
+    padding: 0;
+  }
+  header {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  header * {
+    text-align: center;
+  }
+  header #img {
+    margin-top: 30px;
+  }
+  #main {
+    -ms-grid-columns: (minmax(150px, 1fr))[auto-fit];
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  }
+}
+/*# sourceMappingURL=css.css.map */
